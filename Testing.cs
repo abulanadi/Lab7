@@ -172,8 +172,10 @@ namespace Lab7
 			{
 				for (int trial = 0; trial < numberOfTrials; trial++)
 				{
+					
 					string testString1 = Generator.HugeString(i);
-					string testString2 = Generator.HugeString(i);
+					string stringChunk = testString1.Substring(random.Next(0, testString1.Length / 2));
+					string testString2 = Generator.HugeString(i) + stringChunk + Generator.HugeString(i); 
 
 					stopwatch.Restart();
 					findLCS.BruteLCS(testString1, testString2);
@@ -209,7 +211,8 @@ namespace Lab7
 				for (int trial = 0; trial < numberOfTrials; trial++)
 				{
 					string testString1 = Generator.HugeString(i);
-					string testString2 = Generator.HugeString(i);
+					string stringChunk = testString1.Substring(random.Next(0, testString1.Length / 2));
+					string testString2 = Generator.HugeString(i) + stringChunk + Generator.HugeString(i);
 
 					stopwatch.Restart();
 					findLCS.BetterLCS(testString1, testString2);

@@ -26,7 +26,7 @@ namespace Lab7
 
 			//testing.BetterRandom("BetterResultsRandom.txt");
 
-			//testing.BruteHugeText("BruteResultsHugeText.txt");
+			//testing.BruteHugeText("BruteHugeTextTest.txt");
 
 			//generator.HugeString(1000);
 			//generator.RandomString(20);
@@ -36,7 +36,7 @@ namespace Lab7
 			//generator.WorstCaseString(50);
 			//generator.WorstCaseString(100);
 
-			//testing.BetterHugeText("BetterResultsHugeText.txt");
+			//testing.BetterHugeText("BetterTestHugeText.txt");
 		}
 }
 	}
