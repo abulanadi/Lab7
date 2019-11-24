@@ -14,25 +14,29 @@ namespace Lab7
 			Testing testing = new Testing();
 			StringGenerator generator = new StringGenerator();
 
-			//findLCS.BruteLCS("abcd", "xyz");
+			//findLCS.BruteLCS("aaaabbbcccceeeeeeee", "rrrreeeeeeeettffffaaaabbb");
 
-			//testing.BruteWorstCase("FirstTest.txt");
+			//testing.BruteWorstCase("BruteResultWorstCase.txt");
 
-			//findLCS.BetterLCS("abcd", "xyz");
+			//findLCS.BetterLCS("bbbbbbbaaaaacccccc", "ccccccaaaaabbbbbbb");
 
-			//testing.BetterWorstCase("BetterFirstTest.txt");
+			//testing.BetterWorstCase("BetterResultWorstCase.txt");
 
-			//testing.BruteRandom("BruteRandomTest.txt");
+			//testing.BruteRandom("BruteResultRandom.txt");
 
-			//testing.BetterRandom("BetterRandomTest.txt");
+			//testing.BetterRandom("BetterResultsRandom.txt");
 
-			//testing.BruteHugeText("BruteFirstTest.txt");
+			//testing.BruteHugeText("BruteResultsHugeText.txt");
 
-			//generator.HugeString(500);
+			//generator.HugeString(1000);
 			//generator.RandomString(20);
+			//generator.RandomString(50);
+			//generator.RandomString(100);
 			//generator.WorstCaseString(10);
+			//generator.WorstCaseString(50);
+			//generator.WorstCaseString(100);
 
-			testing.BetterHugeText("BetterHugeTextTest.txt");
+			//testing.BetterHugeText("BetterResultsHugeText.txt");
 		}
 }
 	}

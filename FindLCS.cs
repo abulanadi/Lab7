@@ -16,8 +16,8 @@ namespace Lab7
 			int L1 = string1.Length - 1;
 			int L2 = string2.Length - 1;
 			int lengthLCS = 0;
-			int startIndexStr1;
-			int startIndexStr2;
+			int startIndexStr1 = 0;
+			int startIndexStr2 = 0;
 
 			for(int i = 0; i <= L1; i++)
 			{
@@ -38,9 +38,15 @@ namespace Lab7
 					}
 				}
 			}
-			//Console.WriteLine("Length of largest common substring = {0}", lengthLCS);
-			//Console.WriteLine("Starting index of string 1 = {0}", startIndexStr1);
-			//Console.WriteLine("Starting index of string 2 = {0}", startIndexStr2);
+			/*Console.WriteLine("String 1 is: {0}", string1);
+			Console.WriteLine("String 2 is: {0}", string2);
+			Console.WriteLine("Length of largest common substring = {0}", lengthLCS);
+			if(lengthLCS > 0) 
+			{
+				Console.WriteLine("Starting index of string 1 = {0}", startIndexStr1);
+				Console.WriteLine("Starting index of string 2 = {0}", startIndexStr2);
+			}*/
+			
 		}
 
 		public void BetterLCS(string string1, string string2)
@@ -48,8 +54,7 @@ namespace Lab7
 			int L1 = string1.Length;
 			int L2 = string2.Length;
 			int lengthLCS = 0;
-			int startIndexStr1 = 0;
-			int startIndexStr2 = 0;
+			
 
 			int[,] LCSuffixes = new int[L1 + 1, L2 + 1];
 
@@ -65,8 +70,7 @@ namespace Lab7
 					{
 						LCSuffixes[i, j] = LCSuffixes[i - 1, j - 1] + 1;
 						lengthLCS = Math.Max(lengthLCS, LCSuffixes[i, j]);
-						startIndexStr1 = i;
-						startIndexStr2 = j;
+						
 					}
 					else
 					{
@@ -75,8 +79,7 @@ namespace Lab7
 				}
 			}
 			//Console.WriteLine("Length of largest common substring = {0}", lengthLCS);
-			//Console.WriteLine("Starting index of string 1 = {0}", startIndexStr1);
-			//Console.WriteLine("Starting index of string 2 = {0}", startIndexStr2);
+			
 		}
 	}
 }

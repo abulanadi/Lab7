@@ -11,7 +11,7 @@ namespace Lab7
 	class Testing
 	{
 		string resultsFolderPath = "C:\\Users\\Adria\\School Stuff\\CSC482\\Lab7";
-		static int MaxInput = Convert.ToInt32(Math.Pow(2, 9));
+		static int MaxInput = Convert.ToInt32(Math.Pow(2, 15));
 		static double numberOfTrials = 10;
 		Stopwatch stopwatch = new Stopwatch();
 		

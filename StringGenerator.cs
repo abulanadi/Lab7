@@ -65,7 +65,7 @@ namespace Lab7
 				return new string(newString);
 			}
 
-			for (int i = 1; i < size; i++)
+			for (int i = 1; i < size - 1; i++)
 			{
 				newString[i] = hugeString[startIndex + i];
 			}
