@@ -20,7 +20,7 @@ namespace Lab7
 		{
 			char[] newString = new char[size];
 			newString[0] = Alphabet[random.Next(1, Alphabet.Length)];
-
+			
 			if(size == 1)
 			{
 				return new string(newString);

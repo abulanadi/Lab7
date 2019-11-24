@@ -31,8 +31,8 @@ namespace Lab7
 			//generator.HugeString(500);
 			//generator.RandomString(20);
 			//generator.WorstCaseString(10);
-		
 
+			testing.BetterHugeText("BetterHugeTextTest.txt");
 		}
 }
 	}
